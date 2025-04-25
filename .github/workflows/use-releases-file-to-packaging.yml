@@ -25,6 +25,7 @@ on:
         type: choice
         options:
           - all
+          - rock-2a
           - s905w_s905x_s905x-b860h_s905x-t95_s905x2_s905x3_s905x3-x88-pro-x3_s912_s912-m8s-pro_s912-phicomm-t1_s912-t95z-plus
           - s912-x92_s922x_s922x-ct2000_s922x-reva_seewo-sv21_smart-am40_smart-am60_station-m1_sw799_swan1-w28
           - tanix-tx6_tb-ls3399_tn3399_tpm312_tqc-a01_tvi3315a_vplus_wxy-oec_xiaobao_yskj_zcube1-max_zk-r39a_zysj
@@ -201,6 +202,7 @@ on:
         default: "ophub/kernel"
         type: choice
         options:
+          - dawiducik/byniuios-kernel
           - ophub/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."
@@ -212,6 +214,7 @@ on:
           - flippy
           - dev
           - beta
+          - kernel_rk35xx
       openwrt_storage:
         description: "Select image storage type."
         required: false
@@ -228,7 +231,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - dawiducik
 
 env:
   TZ: America/New_York
